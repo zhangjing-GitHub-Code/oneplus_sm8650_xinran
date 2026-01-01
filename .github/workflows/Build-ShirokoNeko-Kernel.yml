@@ -59,7 +59,7 @@ jobs:
           sudo apt-get install -y --no-install-recommends binutils python-is-python3 libssl-dev libelf-dev ccache &
           
           echo "拉取ShirokoNekoKernel源码..."
-          git clone --depth 1 -b master https://github.com/Winkmoon/ShirokoNeko-Kernel_xinran_oneplus_sm8650 common
+          git clone --depth 1 -b master https://github.com/zhangjing-GitHub-Code/oneplus_sm8650_xinran common
           echo "从cctv18拉取llvm-Clang20工具链..." &&
           mkdir -p clang20 &&
           aria2c -s16 -x16 -k1M https://github.com/cctv18/oneplus_sm8650_toolchain/releases/download/LLVM-Clang20-r547379/clang-r547379.zip -o clang.zip &&
